@@ -7,6 +7,7 @@
     "ordered-imports": true,
     "no-consecutive-blank-lines": true,
     "import-destructuring-spacing": true,
-    "invoke-injectable": true
+    "invoke-injectable": true,
+    "no-any": false
   }
 }

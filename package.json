@@ -55,7 +55,7 @@
     "tslint-eslint-rules": "3.2.3",
     "tslint-ionic-rules": "0.0.8",
     "typedoc": "^0.5.1",
-    "typescript": "~2.2.1",
+    "typescript": "~2.3.4",
     "zone.js": "^0.8.4"
   },
   "peerDependencies": {
@@ -84,5 +84,8 @@
   "bugs": {
     "url": "https://github.com/mbamobi/url-resolver/issues"
   },
-  "homepage": "https://github.com/mbamobi/url-resolver"
+  "homepage": "https://github.com/mbamobi/url-resolver",
+  "dependencies": {
+    "@types/handlebars": "^4.0.35"
+  }
 }
