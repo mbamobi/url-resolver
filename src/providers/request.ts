@@ -29,6 +29,10 @@ export class Request {
     options.headers = options.headers || {};
     let headersDefault = this.getMetadata().getHeaders(id);
     for (let index in options.headers) {
+      if (options.headers[index] === null) {
+        delete headersDefault[index];
+        continue;
+      }
       headersDefault[index] = options.headers[index];
     }
 
