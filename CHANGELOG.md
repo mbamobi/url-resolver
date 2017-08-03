@@ -1,3 +1,23 @@
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/mbamobi/url-resolver/compare/v3.0.0...v3.0.1) (2017-08-03)
+
+
+### Features
+
+* **request:** delete null header items ([6e208be](https://github.com/mbamobi/url-resolver/commit/6e208be))
+
+
+
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mbamobi/url-resolver/compare/v3.0.0...v2.0.0) (2017-08-03)
+
+
+### Features
+
+* **request:** delete null header items ([6e208be](https://github.com/mbamobi/url-resolver/commit/6e208be))
+
+
+
 <a name="3.0.1-nightly.20170802T215604Z.1754bbf"></a>
 ## [3.0.1-nightly.20170802T215604Z.1754bbf](https://github.com/mbamobi/url-resolver/compare/v3.0.0...v3.0.1-nightly.20170802T215604Z.1754bbf) (2017-08-03)
 

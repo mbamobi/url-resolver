@@ -1,6 +1,6 @@
 {
   "name": "@mbamobi/url-resolver",
-  "version": "2.0.0",
+  "version": "3.0.1",
   "description": "Configuration routes to object Http of the Angular2",
   "main": "dist/umd/index.js",
   "typings": "dist/esm/index.d.ts",
@@ -31,33 +31,6 @@
     "README.md",
     "CHANGELOG.md"
   ],
-  "devDependencies": {
-    "@angular/compiler": "4.0.0",
-    "@angular/compiler-cli": "4.0.0",
-    "@angular/core": "4.0.0",
-    "@angular/http": "4.0.0",
-    "@angular/platform-browser-dynamic": "4.0.0",
-    "@mbamobi/configuration": "^3.0.0",
-    "@types/jasmine": "2.2.33",
-    "codelyzer": "2.0.0-beta.4",
-    "commitizen": "^2.8.6",
-    "conventional-changelog-cli": "^1.2.0",
-    "cz-conventional-changelog": "^1.2.0",
-    "fluid-publish": "1.1.0",
-    "github": "0.2.4",
-    "husky": "^0.11.9",
-    "jasmine": "2.5.2",
-    "nyc": "10.0.0",
-    "reflect-metadata": "0.1.8",
-    "rimraf": "^2.5.4",
-    "rxjs": "5.1.1",
-    "tslint": "4.3.1",
-    "tslint-eslint-rules": "3.2.3",
-    "tslint-ionic-rules": "0.0.8",
-    "typedoc": "^0.5.1",
-    "typescript": "~2.3.4",
-    "zone.js": "^0.8.4"
-  },
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "@angular/http": "^4.0.0",
@@ -84,8 +57,5 @@
   "bugs": {
     "url": "https://github.com/mbamobi/url-resolver/issues"
   },
-  "homepage": "https://github.com/mbamobi/url-resolver",
-  "dependencies": {
-    "@types/handlebars": "^4.0.35"
-  }
+  "homepage": "https://github.com/mbamobi/url-resolver"
 }
