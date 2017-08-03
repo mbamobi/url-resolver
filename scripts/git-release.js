@@ -9,7 +9,7 @@ var packageJSON = require('../package.json');
 var token = process.argv[2] ? process.argv[2] : null;
 
 var github = new GithubApi({
-  version: '3.0.0'
+  version: '3.0.1'
 });
 
 github.authenticate({
