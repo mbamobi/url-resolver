@@ -1,4 +1,4 @@
-import { Inject, Injectable, OpaqueToken, Optional } from '@angular/core';
+import { Inject, Injectable, InjectionToken, Optional } from '@angular/core';
 import { Config } from '@mbamobi/configuration';
 import { HTTP_METHODS, Params } from './data-type';
 import { Metadata } from './metadata';
@@ -7,14 +7,14 @@ const KEY_DEFAULTS = '_defaults';
 
 const KEY_CONFIG = 'urlResolver';
 
-export const ConfigRoutesToken = new OpaqueToken('CONFIGROUTESTOKEN');
+export const ConfigRoutesToken = new InjectionToken('CONFIGROUTESTOKEN');
 
 @Injectable()
 export class MetadataBase implements Metadata {
 
   protected data: any = {};
 
-  constructor(@Optional() config: Config, @Optional() @Inject(ConfigRoutesToken) configData: Object) {
+  constructor( @Optional() config: Config, @Optional() @Inject(ConfigRoutesToken) configData: Object) {
     if (typeof config === 'object' && config !== null) {
       this.data = config.get(KEY_CONFIG);
     }
@@ -30,7 +30,7 @@ export class MetadataBase implements Metadata {
 
   protected _set(id: string, key: string, value: any) {
     this.data[id] = this.data[id] || {};
-    this.data[id][key] =  value;
+    this.data[id][key] = value;
   }
 
   protected _add(id: string, key: string, value: any) {
@@ -80,31 +80,31 @@ export class MetadataBase implements Metadata {
     return this._get(id, 'url', false);
   }
 
-  setParams(id: string, params: Array<{[name: string]: Params}>): this {
+  setParams(id: string, params: Array<{ [name: string]: Params }>): this {
     this._set(id, 'params', params);
     return this;
   }
 
-  addParam(id: string, param: {[name: string]: Params}): this {
+  addParam(id: string, param: { [name: string]: Params }): this {
     this._add(id, 'params', param);
     return this;
   }
 
-  getParams(id: string): {[name: string]: Params} {
+  getParams(id: string): { [name: string]: Params } {
     return this._get(id, 'params', false);
   }
 
-  setHeaders(id: string, headers: Array<{[name: string]: Params}>): this {
+  setHeaders(id: string, headers: Array<{ [name: string]: Params }>): this {
     this._set(id, 'headers', headers);
     return this;
   }
 
-  addHeader(id: string, header: {[name: string]: Params}): this {
+  addHeader(id: string, header: { [name: string]: Params }): this {
     this._add(id, 'headers', header);
     return this;
   }
 
-  getHeaders(id?: string): {[key: string]: any} {
+  getHeaders(id?: string): { [key: string]: any } {
     return this._get(id, 'headers', true);
   }
 
@@ -138,7 +138,7 @@ export class MetadataBase implements Metadata {
     let data = this.data;
 
     if ((data[KEY_DEFAULTS] !== null && data[KEY_DEFAULTS] !== undefined)
-       && (data[KEY_DEFAULTS][key] !== null && data[KEY_DEFAULTS][key] !== undefined)) {
+      && (data[KEY_DEFAULTS][key] !== null && data[KEY_DEFAULTS][key] !== undefined)) {
       return data[KEY_DEFAULTS][key];
     }
 
